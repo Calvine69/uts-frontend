@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permainan Tradisional Jawa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <!-- Header -->
+<header class="video-header">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="video/jawa-tradisional.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+  </video>
+  <div class="overlay">
+    <div class="container">
+      <h1>Permainan Tradisional Jawa</h1>
+      <p>Eksplorasi permainan dari Jawa Barat, Jawa Tengah, dan Jawa Timur</p>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Navigasi -->
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#" data-region="all" class="active">Semua</a></li>
+        <li><a href="#" data-region="barat">Jawa Barat</a></li>
+        <li><a href="#" data-region="tengah">Jawa Tengah</a></li>
+        <li><a href="#" data-region="timur">Jawa Timur</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Search -->
+<section class="search-bar container">
+  <input type="text" id="searchInput" placeholder="Cari permainan tradisional...">
+</section>
+
+
+  <!-- Konten -->
+  <main class="container">
+    <section id="cards" class="grid"></section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <ul id="modalRules"></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Permainan Tradisional Jawa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
