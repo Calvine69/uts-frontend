@@ -8,7 +8,7 @@ const games = [
     excerpt: 'Permainan papan dengan biji-bijian tradisional.',
     desc: 'Congklak dimainkan dengan papan dan biji. Tujuannya mengumpulkan biji terbanyak.',
     rules: ['Dua pemain', 'Giliran memindahkan biji', 'Kumpulkan di lumbung sendiri'],
-    image: 'images/congklak.jpg'
+    image: 'image/Congklak.jpg'
   },
   {
     id: 'g2',
@@ -17,7 +17,7 @@ const games = [
     excerpt: 'Mirip engklek, melompat kotak dengan satu kaki.',
     desc: 'Sondah populer di Jawa Barat, dimainkan dengan menggambar kotak di tanah lalu melompatinya.',
     rules: ['Gambar kotak di tanah', 'Lempar gaco', 'Lompat dengan satu kaki'],
-    image: 'images/sondah.jpg'
+    image: 'image/sondah.jpg'
   },
   {
     id: 'g3',
@@ -26,7 +26,7 @@ const games = [
     excerpt: 'Permainan berkelompok seperti ular berjalan.',
     desc: 'Anak-anak berbaris panjang, saling berpegangan sambil bernyanyi lagu oray-orayan.',
     rules: ['Anak-anak berbaris', 'Pegang pundak teman', 'Ikuti gerakan kepala'],
-    image: 'images/orayorayan.jpg'
+    image: 'image/oray-orayan.jpg'
   },
   {
     id: 'g4',
@@ -35,7 +35,7 @@ const games = [
     excerpt: 'Permainan beregu menghadang lawan.',
     desc: 'Galasin dimainkan dengan membuat garis di tanah, pemain menjaga garis agar lawan tidak lewat.',
     rules: ['Buat lapangan garis', 'Dibagi dua tim', 'Cegah lawan menembus garis'],
-    image: 'images/galasin.jpg'
+    image: 'image/galasin.jpg'
   },
   {
     id: 'g5',
@@ -44,7 +44,7 @@ const games = [
     excerpt: 'Bermain dengan bola kaca kecil.',
     desc: 'Kelereng dimainkan dengan cara menyentil kelereng ke kelereng lawan.',
     rules: ['Siapkan kelereng', 'Sentil kelereng untuk mengenai lawan', 'Yang kena, jadi milik pemain'],
-    image: 'images/kelereng.jpg'
+    image: 'image/kelereng.jpg'
   },
 
   // Jawa Tengah
@@ -55,7 +55,7 @@ const games = [
     excerpt: 'Bermain dengan tongkat panjang untuk berjalan tinggi.',
     desc: 'Egrang melatih keseimbangan, biasanya dimainkan saat lomba.',
     rules: ['Gunakan 2 batang bambu', 'Naik dan berjalan', 'Siapa paling cepat dia menang'],
-    image: 'images/egrang.jpg'
+    image: 'image/egrang.jpg'
   },
   {
     id: 'g7',
@@ -64,7 +64,7 @@ const games = [
     excerpt: 'Permainan papan tradisional menggunakan biji-bijian.',
     desc: 'Dakon mirip congklak, tetapi punya variasi aturan di Jawa Tengah.',
     rules: ['Dua pemain', 'Memindahkan biji secara bergilir', 'Kumpulkan biji terbanyak'],
-    image: 'images/dakon.jpg'
+    image: 'image/dakon.jpg'
   },
   {
     id: 'g8',
@@ -73,7 +73,7 @@ const games = [
     excerpt: 'Permainan sambil bernyanyi dengan menebak benda.',
     desc: 'Anak-anak duduk melingkar sambil bernyanyi, satu anak menebak di mana biji/kerikil disembunyikan.',
     rules: ['Beberapa pemain duduk melingkar', 'Satu anak jadi penebak', 'Sembunyikan benda di telapak tangan'],
-    image: 'images/cublak.jpg'
+    image: 'image/cublak suweng.jpg'
   },
   {
     id: 'g9',
@@ -82,7 +82,7 @@ const games = [
     excerpt: 'Melompat kotak dengan satu kaki, populer di desa.',
     desc: 'Engklek dimainkan dengan menggambar kotak di tanah, lalu melompatinya dengan satu kaki.',
     rules: ['Gambar kotak 6–8 petak', 'Gunakan gaco', 'Lompat hingga selesai rute'],
-    image: 'images/engklek.jpg'
+    image: 'image/engklek.jpg'
   },
   {
     id: 'g10',
@@ -91,7 +91,7 @@ const games = [
     excerpt: 'Permainan bersembunyi dan mencari.',
     desc: 'Satu anak menjadi pencari, yang lain bersembunyi di sekitar area.',
     rules: ['Tentukan area bermain', 'Satu anak jadi penjaga', 'Yang tertangkap berganti jadi penjaga'],
-    image: 'images/petakumpet.jpg'
+    image: 'image/petak umpet.jpg'
   },
 
   // Jawa Timur
@@ -102,7 +102,7 @@ const games = [
     excerpt: 'Permainan kelompok menghadang lawan melewati garis.',
     desc: 'Gobak Sodor dimainkan minimal 6 orang, bertujuan menghadang lawan melewati garis lapangan.',
     rules: ['2 tim saling berhadapan', 'Jaga garis masing-masing', 'Tim yang tembus menang'],
-    image: 'images/gobaksodor.jpg'
+    image: 'image/gobak sodor.jpg'
   },
   {
     id: 'g12',
@@ -111,7 +111,7 @@ const games = [
     excerpt: 'Permainan tim untuk merebut benteng lawan.',
     desc: 'Dua tim memiliki markas. Pemain harus menyentuh benteng lawan tanpa tertangkap.',
     rules: ['Dibagi dua tim', 'Tiap tim punya markas', 'Sentuh benteng lawan untuk menang'],
-    image: 'images/bentengan.jpg'
+    image: 'image/bentengan.jpg'
   },
   {
     id: 'g13',
@@ -120,7 +120,7 @@ const games = [
     excerpt: 'Permainan sambil bernyanyi lagu jamuran.',
     desc: 'Anak-anak membentuk lingkaran sambil bernyanyi, lalu mengikuti perintah sesuai syair.',
     rules: ['Bentuk lingkaran', 'Nyanyikan lagu jamuran', 'Ikuti instruksi sesuai syair'],
-    image: 'images/jamuran.jpg'
+    image: 'image/jamuran.jpg'
   },
   {
     id: 'g14',
@@ -129,7 +129,7 @@ const games = [
     excerpt: 'Bermain dengan tali karet gelang yang dianyam panjang.',
     desc: 'Pemain melompat tali yang dipegang dua orang, semakin lama semakin tinggi.',
     rules: ['Dua anak pegang tali', 'Satu anak melompat', 'Tali semakin lama semakin tinggi'],
-    image: 'images/lompattali.jpg'
+    image: 'image/lompat tali.jpg'
   },
   {
     id: 'g15',
@@ -138,7 +138,7 @@ const games = [
     excerpt: 'Permainan berkelompok dengan lagu ular naga panjang.',
     desc: 'Anak-anak membentuk barisan panjang, dua anak jadi pintu gerbang, lalu menangkap di akhir lagu.',
     rules: ['Bentuk barisan panjang', 'Bernyanyi sambil melewati pintu', 'Tangkap anak terakhir saat lagu berhenti'],
-    image: 'images/ularnaga.jpg'
+    image: 'image/ular naga.jpg'
   }
 ];
 
