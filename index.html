@@ -7,43 +7,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <!-- Header -->
-<header class="video-header">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="video/jawa-tradisional.mp4" type="video/mp4">
-    Browser Anda tidak mendukung video.
-  </video>
-  <div class="overlay">
-    <div class="container">
-      <h1>Permainan Tradisional Jawa</h1>
-      <p>Eksplorasi permainan dari Jawa Barat, Jawa Tengah, dan Jawa Timur</p>
-    </div>
-  </div>
-</header>
-
-
-  <!-- Navigasi -->
-  <nav>
-    <div class="container">
-      <ul>
-        <li><a href="#" data-region="all" class="active">Semua</a></li>
-        <li><a href="#" data-region="barat">Jawa Barat</a></li>
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <h2 class="logo">Permainan Jawa</h2>
+      <ul class="nav-links">
+        <li><a href="#" data-region="barat" class="active">Jawa Barat</a></li>
         <li><a href="#" data-region="tengah">Jawa Tengah</a></li>
         <li><a href="#" data-region="timur">Jawa Timur</a></li>
+        <li><a href="#" data-region="favorite">Favorit</a></li>
       </ul>
     </div>
   </nav>
-  <!-- Search -->
-<section class="search-bar container">
-  <input type="text" id="searchInput" placeholder="Cari permainan tradisional...">
-</section>
 
+  <!-- Landing Page -->
+  <header class="landing">
+    <div class="overlay">
+      <div class="container">
+        <h1>Permainan Tradisional Jawa</h1>
+        <p>Eksplorasi sejarah, pengertian, dan ragam permainan dari Jawa Barat, Jawa Tengah, dan Jawa Timur.</p>
+      </div>
+    </div>
+  </header>
 
-  <!-- Konten -->
-  <main class="container">
-    <section id="cards" class="grid"></section>
-  </main>
+  <!-- Permainan Section -->
+  <section id="explore" class="explore container">
+    <main>
+      <section id="cards" class="grid"></section>
+    </main>
+  </section>
 
   <!-- Modal -->
   <div id="modal" class="modal hidden">
@@ -55,6 +47,7 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Permainan Tradisional Jawa</p>
   </footer>
