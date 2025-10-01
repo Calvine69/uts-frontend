@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Permainan Tradisional Jawa</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Permainan Tradisional</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav class="main-nav">
-    <div class="container nav-container">
-      <h2 class="logo">Permainan Jawa</h2>
-      <ul class="nav-links">
-        <li><a href="#" data-region="barat" class="active">Jawa Barat</a></li>
-        <li><a href="#" data-region="tengah">Jawa Tengah</a></li>
-        <li><a href="#" data-region="timur">Jawa Timur</a></li>
-        <li><a href="#" data-region="favorite">Favorit</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  
-  <header class="landing">
-    <div class="overlay">
-      <div class="container">
-        <h1>Permainan Tradisional Jawa</h1>
-        <p>Eksplorasi sejarah, pengertian, dan ragam permainan dari Jawa Barat, Jawa Tengah, dan Jawa Timur.</p>
-      </div>
-    </div>
-  </header>
-
-  
-  <section id="explore" class="explore container">
-    <main>
-      <section id="cards" class="grid"></section>
-    </main>
-  </section>
-
-  
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeBtn" class="close">&times;</span>
-      <h2 id="modalTitle"></h2>
-      <p id="modalDesc"></p>
-      <ul id="modalRules"></ul>
-    </div>
+<nav class="main-nav">
+  <div class="container nav-container">
+    <div class="logo">Permainan Tradisional</div>
+    <ul class="nav-links">
+      <li><a href="#" data-region="barat" class="active">Jawa Barat</a></li>
+      <li><a href="#" data-region="tengah">Jawa Tengah</a></li>
+      <li><a href="#" data-region="timur">Jawa Timur</a></li>
+      <li><a href="#" data-region="favorite">Favorit</a></li>
+    </ul>
   </div>
+</nav>
 
-  
-  <footer>
-    <p>&copy; 2025 Permainan Tradisional Jawa</p>
-  </footer>
+<section class="landing">
+  <div>
+    <h1>Selamat Datang</h1>
+    <p>Temukan permainan tradisional Indonesia sesuai daerah dan favoritmu!</p>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<div class="container">
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Cari permainan...">
+  </div>
+  <div class="grid" id="cards"></div>
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <span class="close" id="closeBtn">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <ul id="modalRules"></ul>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Permainan Tradisional
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

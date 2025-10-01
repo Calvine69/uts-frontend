@@ -2,7 +2,7 @@ const games = [
   { id: 'g1', name: 'Congklak', region: 'barat', excerpt: 'Permainan papan dengan biji-bijian tradisional.', desc: 'Congklak dimainkan dengan papan kayu berlubang dan biji-bijian. Tujuannya mengumpulkan biji terbanyak.', rules: ['2 pemain', 'Ambil biji dari lubang', 'Giliran berjalan searah jarum jam'] },
   { id: 'g4', name: 'Bentengan', region: 'barat', excerpt: 'Permainan dua kelompok untuk merebut benteng lawan.', desc: 'Masing-masing tim memiliki benteng. Pemain harus menyentuh benteng lawan tanpa tertangkap.', rules: ['2 kelompok', 'Ada benteng masing-masing', 'Pemain tertangkap jadi tawanan'] },
   { id: 'g7', name: 'Bekel', region: 'barat', excerpt: 'Permainan bola kecil dan biji-bijian.', desc: 'Bekel dimainkan dengan melempar bola karet kecil dan mengambil biji bekel sebelum bola jatuh.', rules: ['Gunakan bola kecil', 'Ambil biji sesuai urutan', 'Tidak boleh gagal tangkap bola'] },
-  { id: 'g8', name: 'Petak Umpet', region: 'barat', excerpt: 'Permainan sembunyi-sembunyi yang seru.', desc: 'Satu anak jadi pencari, yang lain bersembunyi. Pencari harus menemukan semua temannya.', rules: ['1 pencari', 'Yang lain bersembunyi', 'Pencari harus menemukan semua pemain'] },
+  { id: 'g8', name: 'Petak Umpet', region: 'barat', excerpt: 'Permainan sembunyi-sembunyian yang seru.', desc: 'Satu anak jadi pencari, yang lain bersembunyi. Pencari harus menemukan semua temannya.', rules: ['1 pencari', 'Yang lain bersembunyi', 'Pencari harus menemukan semua pemain'] },
   { id: 'g2', name: 'Gobak Sodor', region: 'tengah', excerpt: 'Permainan kelompok dengan strategi menghadang lawan.', desc: 'Gobak Sodor dimainkan oleh dua tim. Satu tim menjaga garis, tim lain mencoba melewati.', rules: ['Minimal 6 pemain', 'Dua kelompok', 'Tidak boleh keluar garis'] },
   { id: 'g5', name: 'Jamuran', region: 'tengah', excerpt: 'Permainan dengan nyanyian dan gerakan.', desc: 'Anak-anak membentuk lingkaran sambil bernyanyi, lalu mengikuti instruksi pemimpin.', rules: ['Bernyanyi bersama', 'Ikuti perintah pemimpin', 'Tidak boleh salah gerakan'] },
   { id: 'g6', name: 'Cublak-Cublak Suweng', region: 'tengah', excerpt: 'Permainan tebak tangan sambil bernyanyi.', desc: 'Satu anak tidur tengkurap, pemain lain menyembunyikan batu kecil di tangan sambil bernyanyi.', rules: ['Minimal 4 anak', '1 jadi penebak', 'Sembunyikan batu di tangan'] },
@@ -13,6 +13,7 @@ const games = [
 ];
 
 const cardsEl = document.getElementById('cards');
+const searchInput = document.getElementById('searchInput');
 const modal = document.getElementById('modal');
 const modalTitle = document.getElementById('modalTitle');
 const modalDesc = document.getElementById('modalDesc');
@@ -59,6 +60,18 @@ document.querySelectorAll('nav a').forEach(link => {
     link.classList.add('active');
     filterRegion(link.dataset.region);
   });
+});
+
+searchInput.addEventListener('input', () => {
+  const val = searchInput.value.toLowerCase();
+  const activeRegion = document.querySelector('nav a.active').dataset.region;
+  let filtered = games.filter(g => g.name.toLowerCase().includes(val));
+  if (activeRegion !== 'all' && activeRegion !== 'favorite') {
+    filtered = filtered.filter(g => g.region === activeRegion);
+  } else if (activeRegion === 'favorite') {
+    filtered = filtered.filter(g => favorites.includes(g.id));
+  }
+  renderCards(filtered);
 });
 
 cardsEl.addEventListener('click', e => {
